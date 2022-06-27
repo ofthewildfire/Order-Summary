@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 body {
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display';
@@ -11,9 +12,9 @@ body {
 /* Container */
 
 .container {
-    height: 500px;
+    height: 550px;
     width: 300px;
-    background-color: hsl(225, 100%, 98%);
+    background-color: white;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 60px;
@@ -45,3 +46,135 @@ p {
 }
 
 /* Plan type container */
+
+.plan-type-box {
+    height: 75px;
+    width: 255px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+img.music-icon {
+    position: relative;
+    top: 12px;
+    left: 10px;
+}
+
+/* Plan chosen text-styling */
+
+.plan-type-chosen {
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.plan-type-price {
+    position: relative;
+    right: 62px;
+    top: 5px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.plan-types a {
+    color: hsl(245, 75%, 52%);
+}
+
+.change-link {
+    position: relative;
+    left: 190px;
+    bottom: 25px;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+
+
+/* Payment Button Styling */
+
+.payment-button-box button {
+    height: 50px;
+    width: 255px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 30px;
+
+    font-size: 16px;
+    color: hsl(225, 100%, 94%);
+    font-weight: 700;
+    text-align: center;
+
+    border: none;
+    /* this is nice, happy to have thought of it while staring at the screen and that horrible looking black shadow the button had before. well done you. */
+
+    /* come back and work on the box shadow*/
+
+    box-shadow: 0em 1.9em 1.2em -0.8em hsl(225, 100%, 94%);
+}
+
+
+
+/* Order cancel styling */
+
+.order-cancel {
+    margin-top: 26px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* Desktop ver. | only small changes to the container. So that the box looks more square-ish and can center nicely and evenly as possible */
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        height: 500px;
+        width: 310px;
+        margin-top: 85px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        margin-top: -10px;
+    }
+
+    .plan-type-box {
+        height: 75px;
+        width: 260px;
+        margin-top: 15px;
+    }
+
+    .change-link {
+        left: -15px;
+        bottom: 7px;
+    }
+
+    .payment-button-box button {
+        width: 260px;
+        margin-top: 20px;
+    }
+}
+
+/* The active states */
+
+.change-link:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.payment-button-box button:hover {
+    cursor: pointer;
+    background-color: hsl(224, 23%, 55%);
+}
+
+.order-cancel:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
